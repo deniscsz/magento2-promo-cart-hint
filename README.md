@@ -148,19 +148,19 @@ sudo supervisorctl status spalenza-promohint-consumer:*
 │ Admin saves     │─────▶│ Observer     │─────▶│ Message     │
 │ SalesRule       │      │ publishes    │      │ Queue       │
 └─────────────────┘      └──────────────┘      └─────────────┘
-                                                       │
-                                                       ▼
+                                                      │
+                                                      ▼
+                                               ┌─────────────┐
+                                               │ Consumer    │
+                                               │ processes   │
+                                               └─────────────┘
+                                                      │
+                                                      ▼
 ┌─────────────────┐      ┌──────────────┐      ┌─────────────┐
-│ Cart Page       │◀─────│ AJAX         │◀─────│ Consumer    │
-│ displays hints  │      │ Controller   │      │ processes   │
-└─────────────────┘      └──────────────┘      └─────────────┘
-                                                        │
-                                                        ▼
-                                                 ┌─────────────┐
-                                                 │ Products    │
-                                                 │ extracted   │
-                                                 │ from rules  │
-                                                 └─────────────┘
+│ Cart Page       │◀─────│ AJAX         │◀─────│ Products    │
+│ displays hints  │      │ Controller   │      │ extracted   │
+└─────────────────┘      └──────────────┘      │ saved on DB │
+                                               └─────────────┘
 ```
 
 ### Technical Details
