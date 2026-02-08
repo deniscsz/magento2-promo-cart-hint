@@ -346,7 +346,7 @@ SOFTWARE.
 
 ## Credits
 
-Developed by [Spalenza](https://spalenza.com)
+Developed by [Denis Spalenza](https://github.com/deniscsz)
 
 ---
 
