@@ -1,12 +1,10 @@
 # Magento 2 Promo Hint Module
 
-[![Latest Version](https://img.shields.io/github/v/release/spalenza/magento2-promohint)](https://github.com/spalenza/magento2-promohint/releases)
-[![License](https://img.shields.io/github/license/spalenza/magento2-promohint)](LICENSE)
+[![Latest Version](https://img.shields.io/github/v/release/spalenza/magento2-promo-cart-hint)](https://github.com/spalenza/magento2-promo-cart-hint/releases)
+[![License](https://img.shields.io/github/license/spalenza/magento2-promo-cart-hint)](LICENSE)
 [![Magento 2](https://img.shields.io/badge/magento-2.4-blue.svg)](https://magento.com)
 
 A Magento 2 extension that displays applicable cart price rule promotions for products in the shopping cart. Uses asynchronous message queue processing for optimal performance.
-
-![Demo](https://via.placeholder.com/800x200?text=Promo+Hint+Demo)
 
 ## Features
 
@@ -39,7 +37,7 @@ php bin/magento cache:flush
 
 ### From GitHub Archive
 
-1. Download the latest release from [GitHub Releases](https://github.com/spalenza/magento2-promohint/releases)
+1. Download the latest release from [GitHub Releases](https://github.com/spalenza/magento2-promo-cart-hint/releases)
 2. Extract to `app/code/Spalenza/PromoHint/`
 3. Run the installation commands above
 
@@ -303,8 +301,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Support
 
-- **Documentation**: [Full Documentation](https://github.com/spalenza/magento2-promohint/wiki)
-- **Issues**: [GitHub Issues](https://github.com/spalenza/magento2-promohint/issues)
+- **Documentation**: [Full Documentation](https://github.com/spalenza/magento2-promo-cart-hint/wiki)
+- **Issues**: [GitHub Issues](https://github.com/spalenza/magento2-promo-cart-hint/issues)
 - **Email**: support@spalenza.com
 
 ## Changelog
