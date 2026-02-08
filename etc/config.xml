@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <spalenza_promohint>
+            <general>
+                <enabled>1</enabled>
+                <display_text_template><![CDATA[%product_name% possui a seguinte promoção: %title%]]></display_text_template>
+                <max_rules_display>5</max_rules_display>
+            </general>
+        </spalenza_promohint>
+    </default>
+</config>

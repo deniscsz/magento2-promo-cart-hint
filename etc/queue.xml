@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/queue.xsd">
+    <broker topic="spalenza.promohint.rule.update" type="db" exchange="magento">
+        <queue consumer="spalenzaPromohintRuleUpdateConsumer"
+               name="spalenza-promohint-rule-update"
+               handler="Spalenza\PromoHint\Model\Consumer\PromoHintConsumer::process"/>
+    </broker>
+</config>

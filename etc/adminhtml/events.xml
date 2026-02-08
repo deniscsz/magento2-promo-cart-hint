@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="adminhtml_salesrule_save_after">
+        <observer name="spalenza_promohint_salesrule_save_after"
+                  instance="Spalenza\PromoHint\Observer\AdminhtmlSalesruleSaveAfter"/>
+    </event>
+    <event name="adminhtml_salesrule_delete_after">
+        <observer name="spalenza_promohint_salesrule_delete_after"
+                  instance="Spalenza\PromoHint\Observer\AdminhtmlSalesruleDeleteAfter"/>
+    </event>
+</config>

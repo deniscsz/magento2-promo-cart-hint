@@ -1,0 +1,25 @@
+<?php
+/**
+ * @var $block \Spalenza\PromoHint\Block\Cart\PromoHint
+ */
+
+if (!$block->isEnabled() || !$block->hasItemsInCart()) {
+    return;
+}
+
+$ajaxUrl = $block->getAjaxUrl();
+$productIds = implode(',', $block->getCartProductIds());
+?>
+
+<div class="spalenza-promo-hints-container"
+     data-mage-init='{
+         "spalenza_promohint": {
+             "ajaxUrl": "<?= $block->escapeJs($ajaxUrl) ?>",
+             "productIds": [<?= $block->escapeJs($productIds) ?>]
+         }
+     }'>
+    <div class="spalenza-promo-hints-loader" style="display: none;">
+        <?= $block->escapeHtml(__('Loading available promotions...')) ?>
+    </div>
+    <div class="spalenza-promo-hints-content"></div>
+</div>

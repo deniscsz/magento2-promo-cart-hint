@@ -1,0 +1,31 @@
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+
+# Vendor directory
+vendor/
+
+# Composer files (lock file will be generated on install)
+# composer.lock
+
+# Test coverage
+coverage/
+
+# Build files
+build/
+dist/

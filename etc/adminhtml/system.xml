@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="spalenza" translate="label" sortOrder="300">
+            <label>Spalenza</label>
+        </tab>
+        <section id="spalenza_promohint" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Promo Hints</label>
+            <tab>spalenza</tab>
+            <resource>Spalenza_PromoHint::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="display_text_template" translate="label" type="textarea" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Display Text Template</label>
+                    <comment><![CDATA[Available variables: %product_name%, %product_sku%, %title%, %discount_amount%, %coupon_code%]]></comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="max_rules_display" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Maximum Rules to Display</label>
+                    <validate>validate-number validate-zero-or-greater</validate>
+                    <comment>Maximum number of promo hints to display per product</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
